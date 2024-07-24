@@ -1,0 +1,135 @@
+body {
+    background: linear-gradient(to right, #f4f1f1, #ffcccb);
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff6347;
+    margin-top: 20px;
+}
+
+.container {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input-task {
+    width: 70%;
+    height: 50px;
+    font-size: 20px;
+    padding: 0 10px;
+    border: 2px solid #ff6347;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.add-button {
+    height: 50px;
+    width: 80px;
+    background: linear-gradient(to right, #ff6347, #ff4500);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background: linear-gradient(to right, #ff4500, #ff6347);
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filter-button {
+    height: 40px;
+    width: 100px;
+    background: linear-gradient(to right, #32cd32, #228b22);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    background: linear-gradient(to right, #228b22, #32cd32);
+}
+
+.filter-options {
+    display: none;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.filter-options label {
+    margin: 5px 0;
+}
+
+.task-list {
+    margin-top: 20px;
+}
+
+.task-list-title {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #ffefd5, #ffdab9);
+    color: #333;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-item p {
+    margin: 0;
+    flex: 1;
+    padding-left: 10px;
+}
+
+.task-item .edit, .task-item .delete {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.task-item .edit {
+    color: #0004ff;
+}
+
+.task-item .delete {
+    color: #ff4500;
+    font-weight: bold;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    color: gray;
+}

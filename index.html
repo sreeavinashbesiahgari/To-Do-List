@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">TO DO LIST</div>
+    <div class="container">
+        <div class="task-input-container">
+            <input id="taskInput" class="input-task" type="text" placeholder="Enter your task">
+            <button class="add-button" onclick="addTask()">Add</button>
+        </div>
+        <div class="filter-container">
+            <button class="filter-button" onclick="toggleFilterOptions()">Filter</button>
+            <div id="filterOptions" class="filter-options">
+                <label><input type="radio" name="filter" value="all" checked onclick="filterTasks('all')"> All</label>
+                <label><input type="radio" name="filter" value="completed" onclick="filterTasks('completed')"> Completed</label>
+                <label><input type="radio" name="filter" value="uncompleted" onclick="filterTasks('uncompleted')"> Uncompleted</label>
+            </div>
+        </div>
+        <div class="task-list">
+            <p class="task-list-title">TASK LIST</p>
+            <div id="taskListContainer"></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
